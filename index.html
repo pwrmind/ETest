@@ -206,8 +206,6 @@
 				
 				// start with the second argument (i = 1)
 				for (var i = 0; i < arguments.length; i++) {
-					// "gm" = RegEx options for Global search (more than one instance)
-					// and for Multiline search
 					var regEx = new RegExp("\\{" + i + "\\}", "gm");
 					theString = theString.replace(regEx, arguments[i]);
 				}
